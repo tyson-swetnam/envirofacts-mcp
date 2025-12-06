@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "envirofacts": {
+      "command": "/Users/tswetnam/Documents/superfund-dust/venv/bin/python",
+      "args": ["-m", "src.server"],
+      "cwd": "/Users/tswetnam/Documents/superfund-dust"
+    }
+  }
+}

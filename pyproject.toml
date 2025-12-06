@@ -1,0 +1,41 @@
+[project]
+name = "epa-envirofacts-mcp"
+version = "0.1.0"
+description = "MCP tool for querying EPA Envirofacts Data Service API"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-httpx>=0.30.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
